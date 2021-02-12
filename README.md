@@ -16,5 +16,8 @@ A2. Otherwise, if the true value of the matching score of edge ij is overbudget,
 
 Case B: the upper bound ij is not over our budget. We will then order the elements of the stack by their upperbounds. Using a heap, which takes O( n log n) time. each element is popped and then inserted into the heap, and then
 popped from the heap and left appended to the stack. This means the edge with the greatest upper bound is at the top. We can then check upon each iteration if the top of the stack is overbudget. If not, then we can terminate.
-## TODO:
-we would like to see a comparison between the two methods. They should be doing the name eliminations, but performing the matching test a different number of times. create data analysis for this at different levels of k. 
+
+
+#
+idea: we could use the dummy/v ratio as a lazy evaluation of buildcostmatrix
+rather than computing it each time, and we could maintain 'bins' based on the ratio. 
