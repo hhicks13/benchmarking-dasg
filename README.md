@@ -20,4 +20,4 @@ popped from the heap and left appended to the stack. This means the edge with th
 
 #
 idea: we could use the dummy/v ratio as a lazy evaluation of buildcostmatrix
-rather than computing it each time, and we could maintain 'bins' based on the ratio. 
+rather than computing it each time, and we could maintain 'bins' based on the ratio. roundrobin evaluation of ratios. This would be justified since after the top of the stack is processed, if an elimination occurs, the next item on the stack is not necessarily the highest priority. 
